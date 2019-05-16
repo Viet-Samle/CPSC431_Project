@@ -22,11 +22,11 @@ $conn->query("USE boyfriendRental");
 
 $applicationTable = "CREATE TABLE IF NOT EXISTS APPLICATIONS(
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(30) NOT NULL,
-	email VARCHAR(50) NOT NULL,
-	height FLOAT(2,1) NOT NULL,
-	gender VARCHAR(10) NOT NULL,
-	message TEXT NOT NULL,
+	name VARCHAR(30),
+	email VARCHAR(50,
+	height FLOAT(2,1),
+	gender VARCHAR(10),
+	message TEXT ,
 )";
 if ($conn->query($applicationTable) === TRUE){
 }else{
