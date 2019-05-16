@@ -27,8 +27,6 @@ $applicationTable = "CREATE TABLE IF NOT EXISTS APPLICATIONS(
 	height FLOAT(2,1) NOT NULL,
 	gender VARCHAR(10) NOT NULL,
 	message TEXT NOT NULL,
-
-	UNIQUE KEY unique_email(email)
 )";
 if ($conn->query($applicationTable) === TRUE){
 }else{
