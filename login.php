@@ -19,7 +19,7 @@ if(isset($_POST['login-submit'])){
 		header("Location: ./home.php?error=emptyfields");
 		exit();
 	}else{
-		$LOGIN = "SELECT * FROM boyfriendRental.members WHERE email='$loginEmail'";
+		$LOGIN = "SELECT * FROM boyfriendRental.MEMBERS WHERE email='$loginEmail'";
 		$result = mysqli_query($conn,$LOGIN);
 		$row = mysqli_fetch_assoc($result);
 		if(md5($loginPassword) == $row['password']){

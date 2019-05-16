@@ -24,9 +24,12 @@
 			exit();
 		}else{
 			$hashpassword = md5($password);
+			$conn->query("USE boyfriendRental");
 			$insertNewMember = "INSERT INTO boyfriendRental.MEMBERS (firstname,lastname,email,password) VALUES('$firstname','$lastname','$email','$hashpassword')";
 
 			if($conn->query($insertNewMember) === TRUE){
+				session_start();
+				$_SESSION['userFirstName'] = $firstname;
 				header("Location: ./memberHome.php?submit=signup-success");
 				exit();
 			}else if(mysqli_errno($conn) == 1062){

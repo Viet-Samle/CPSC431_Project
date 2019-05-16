@@ -10,8 +10,7 @@
  	<hr class="m-y-2">
   <p class="lead">Welcome Back <?php echo $_SESSION['userFirstName'] ?></p>
  	<p class="lead">Unfortunately, Our available boyfriends have been reserved or deported</p>
- 	<p class="lead">Contact if you have suggestions</p>
-  <p class="lead">Professor Robblee, the only thing I've implemented is the contact so please go there</p>
+  <p class="lead">Professor Robblee, the only thing I've implemented is the application page so please go there</p>
  </div>
 
 

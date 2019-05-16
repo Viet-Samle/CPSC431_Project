@@ -26,8 +26,7 @@
                                   echo "home.php";
                                 }else if(isset($_SESSION['userFirstName'])){
                                   echo "memberHome.php";
-                                }?>
-                              >Home
+                                }?>>Home
         </a>
       </li>
       <li class="nav-item">

@@ -15,7 +15,7 @@
 	if($conn->connect_error){
 		die("Connection failed: ". $conn->connect_error);
 	}
-	$conn->query("USE duckySupport");
+	$conn->query("USE boyfriendRental");
 	$insertApplication = "INSERT INTO boyfriendRental.APPLICATIONS (name, email, height, gender, message) VALUES('$name', '$email', '$height', '$gender','$message')";
 
 	if($conn->query($insertApplication) === TRUE){

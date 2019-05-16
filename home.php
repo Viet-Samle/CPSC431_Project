@@ -14,7 +14,6 @@ if(isset($_GET['submit'])){
 
 	<h1 class="display-3">Welcome to Boyfriend Rentals</h1>
 	<p><small>We put the date in date night</small></p>
-	<hr class="m-y-2">
 	<p class="lead">Our available boyfriends have been reserved or deported. Please sign up to receive further news. </p>
 	<p class="lead">If you're interested in becoming rentable, submit an application</p>
 </div>
@@ -42,9 +41,7 @@ if(isset($_GET['submit'])){
       <div class="modal-body">
 				<form action="login.php" method="post">
 				  <div class="form-group">
-
 				    <label for="memberEmail">Email address</label>
-
 				    <input type="email" class="form-control" name="memberEmail" id="memberEmail" aria-describedby="emailHelp" placeholder="Enter email">
 				    <small id="emailHelp" class="form-text text-muted">Your E-Mail's safe with us.</small>
 				  </div>

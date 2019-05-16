@@ -31,7 +31,6 @@ $applicationTable = "CREATE TABLE IF NOT EXISTS APPLICATIONS(
 	UNIQUE KEY unique_email(email)
 )";
 if ($conn->query($applicationTable) === TRUE){
-	// echo "Contact table created successfully ";
 }else{
 	echo $conn->error;
 	echo '<div class="alert alert-danger">Applications table failed to create</div>';
