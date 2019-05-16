@@ -2,7 +2,7 @@
 	require('header.php');
 	$servername = "localhost";
 	$username = "root";
-	$password = "donuts24";
+	$password = "root";
 
 	$name = trim($_POST['name']);
 	$email = trim($_POST['email']);
