@@ -8,7 +8,7 @@
 
 	<form action="/applicationForm.php" method="post">
 		<div class="text-right">
-			<button action="home.php" type="submit" class="btn btn-primary">Submit Application</button>
+			<button action="home.php" type="submit" class="btn btn-primary" name="apply-submit">Submit Application</button>
 		</div>
 		<div class="form-group">
 			<label for="name">Your Name: </label>
