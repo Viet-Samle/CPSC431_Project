@@ -11,24 +11,21 @@
 ?>
 
 <div class="jumbotron vertical-center" id="home">
-
 	<h1 class="display-3">Welcome to Boyfriend Rentals</h1>
 	<p><small>We put the date in date night</small></p>
 	<p class="lead">Our available boyfriends have been reserved or deported. Please sign up to receive further news. </p>
 	<p class="lead">If you're interested in becoming rentable, submit an application</p>
 </div>
-
 	<div class="col-md-12 text-center">
 		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#signInModal">
 			Log In
 		</button>
-
 		<button type="button" class="btn btn-info" data-toggle="modal" data-target="#signUpModal">
 			Sign Up
 		</button>
 	</div>
 
-<!-- Member sign in pop up -->
+<!-- Pop Up for Member Log In - Uses login.php -->
 <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -52,18 +49,16 @@
 					<div class="col-md-12 text-center">
 						<button type="submit" class="btn btn-primary" name="login-submit">Log In</button>
 					</div>
-
 				</form>
       </div>
       <div class="modal-footer">
-
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Non Member sign up pop up  -->
+<!-- Sign Up for users - uses signUp.php  -->
 <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">

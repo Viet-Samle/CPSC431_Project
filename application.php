@@ -28,7 +28,6 @@
 				<option value=6.0>More than 6'</option>
 			</select>
 		</div>
-
 		<div class="form-group">
 			<label for="gender">Which sex are you (or can pretend to be) attracted to?</label>
 			<select class="form-control form-control-sm" name="gender" id="gender">
@@ -38,12 +37,10 @@
 				<option value="Other">Other</option>
 			</select>
 		</div>
-
 		<div class="form-group">
 			<label for="message">Describe your best qualities.</label>
 			<textarea class="form-control" name="message" rows="8" cols="110"></textarea>
 		</div>
-
 	</form>
 </div>
 

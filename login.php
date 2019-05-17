@@ -27,7 +27,7 @@
 				$_SESSION['userFirstName'] = $row['firstname'];
 				header("Location: ./memberHome.php?credentials=valid");
 				exit();
-			}else{
+			} else {
 				header("Location: ./home.php?credentials=invalid");
 				exit();
 			}
