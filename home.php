@@ -3,12 +3,12 @@
 	require('makeDB.php');
 ?>
 <?php
-if(isset($_GET['submit'])){
-	if($_GET['submit'] == "signup-success"){
-		echo '<div class="alert alert-success"><strong>Thank you for joining Boyfriend Rentals</strong> Have a nice day! </div>';
+	if(isset($_GET['submit'])) {
+		if($_GET['submit'] == "signup-success") {
+			echo '<div class="alert alert-success"><strong>Thank you for joining Boyfriend Rentals</strong> Have a nice day! </div>';
+		}
 	}
-}
- ?>
+?>
 
 <div class="jumbotron vertical-center" id="home">
 
@@ -88,12 +88,12 @@ if(isset($_GET['submit'])){
 				  <div class="form-group" >
 				    <label for="newMemberEmail">E-mail Address</label>
 						<?php
-						if(isset($_GET['error'])){
-							if($_GET['error'] == "duplicate-email"){
-								echo "<script>$('#signUpModal').modal('show')</script>";
-								echo '<div class="alert alert-danger">E-mail is already in use!</div>';
+							if(isset($_GET['error'])){
+								if($_GET['error'] == "duplicate-email"){
+									echo "<script>$('#signUpModal').modal('show')</script>";
+									echo '<div class="alert alert-danger">E-mail is already in use!</div>';
+								}
 							}
-						}
 						?>
 				    <input type="email" class="form-control" name="newMemberEmail" id="newMemberEmail" aria-describedby="emailHelp" placeholder="Enter email">
 				    <small id="emailHelp" class="form-text text-muted">This will be used to log in.</small>
@@ -101,26 +101,26 @@ if(isset($_GET['submit'])){
 					<div class="form-group">
 						<label for="newMemberPassword">Password</label>
 						<?php
-						if(isset($_GET['error'])){
-							if($_GET['error'] == "passwordsmismatch"){
-								echo "<script>$('#signUpModal').modal('show')</script>";
-								echo '<div class="alert alert-danger"><small>Password is not matching!</small></div>';
+							if(isset($_GET['error'])){
+								if($_GET['error'] == "passwordsmismatch"){
+									echo "<script>$('#signUpModal').modal('show')</script>";
+									echo '<div class="alert alert-danger"><small>Password is not matching!</small></div>';
+								}
 							}
-						}
-						 ?>
+						?>
 
 				    <input type="password" class="form-control" name="newMemberPassword" id="newMemberPassword" placeholder="Password">
 					</div>
 					<div class="form-group">
 						<label for="newMemberConfirmPassword">Confirm Password</label>
 						<?php
-						if(isset($_GET['error'])){
-							if($_GET['error'] == "passwordsmismatch"){
-								echo "<script>$('#signUpModal').modal('show')</script>";
-								echo '<div class="alert alert-danger"><small>Password is not matching!</small></div>';
+							if(isset($_GET['error'])){
+								if($_GET['error'] == "passwordsmismatch"){
+									echo "<script>$('#signUpModal').modal('show')</script>";
+									echo '<div class="alert alert-danger"><small>Password is not matching!</small></div>';
+								}
 							}
-						}
-						 ?>
+						?>
 				    <input type="password" class="form-control" name="newMemberConfirmPassword" id="newMemberConfirmPassword" placeholder="Password">
 						<small id="confirmHelp" class="form-text text-muted">Passwords Must Match.</small>
 					</div>
@@ -141,4 +141,4 @@ if(isset($_GET['submit'])){
 
 <?php
 	require('footer.php');
- ?>
+?>

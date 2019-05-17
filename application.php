@@ -49,4 +49,4 @@
 
 <?php
 	require('footer.php');
- ?>
+?>
