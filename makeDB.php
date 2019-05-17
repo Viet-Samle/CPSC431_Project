@@ -1,5 +1,4 @@
 <?php
-
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -7,26 +6,26 @@ $dbname = "boyfriendRental";
 
 $conn = new mysqli($servername, $username, $password);
 
-if($conn->connect_error){
+if ($conn->connect_error) {
 	die("Connection failed: ". $conn->connect_error);
 }
 
 $DBsql = "CREATE DATABASE IF NOT EXISTS boyfriendRental";
-if($conn->query($DBsql) === TRUE){
+if($conn->query($DBsql) === TRUE) {
 	// echo "Database created sucessfully ";
-}else{
+} else {
 	echo $conn->error;
 }
 
 $conn->query("USE boyfriendRental");
 
-$applicationTable = "CREATE TABLE IF NOT EXISTS APPLICATIONS(
+$applicationTable = "CREATE TABLE IF NOT EXISTS APPLICATIONS (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(30),
-	email VARCHAR(50,
+	email VARCHAR(50),
 	height FLOAT(2,1),
 	gender VARCHAR(10),
-	message TEXT ,
+	message TEXT
 )";
 if ($conn->query($applicationTable) === TRUE){
 }else{
@@ -34,7 +33,7 @@ if ($conn->query($applicationTable) === TRUE){
 	echo '<div class="alert alert-danger">Applications table failed to create</div>';
 }
 
-$membersTable = "CREATE TABLE IF NOT EXISTS MEMBERS(
+$membersTable = "CREATE TABLE IF NOT EXISTS MEMBERS (
 	id INT(6) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	firstname VARCHAR(30) NOT NULL,
 	lastname VARCHAR(30) NOT NULL,
